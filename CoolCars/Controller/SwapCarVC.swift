@@ -36,6 +36,10 @@ class SwapCarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toMoreInfoVC", sender: self)
+    }
+    
     @IBAction func homeButtonPressed(_ sender: UIButton) {
         
     }

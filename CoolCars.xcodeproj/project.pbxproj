@@ -17,6 +17,7 @@
 		3D55830F242EC6A800F12C20 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D55830E242EC6A800F12C20 /* Car.swift */; };
 		3D558311242EC6CD00F12C20 /* CarOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D558310242EC6CD00F12C20 /* CarOptions.swift */; };
 		3D558315242EECE200F12C20 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D558314242EECE200F12C20 /* HomeVC.swift */; };
+		3D558317242F03F800F12C20 /* MoreInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D558316242F03F700F12C20 /* MoreInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3D55830E242EC6A800F12C20 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		3D558310242EC6CD00F12C20 /* CarOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarOptions.swift; sourceTree = "<group>"; };
 		3D558314242EECE200F12C20 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3D558316242F03F700F12C20 /* MoreInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				3D5582F9242EB8A200F12C20 /* SwapCarVC.swift */,
 				3D558314242EECE200F12C20 /* HomeVC.swift */,
+				3D558316242F03F700F12C20 /* MoreInfoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				3D5582FA242EB8A200F12C20 /* SwapCarVC.swift in Sources */,
 				3D558315242EECE200F12C20 /* HomeVC.swift in Sources */,
 				3D5582F6242EB8A200F12C20 /* AppDelegate.swift in Sources */,
+				3D558317242F03F800F12C20 /* MoreInfoVC.swift in Sources */,
 				3D55830F242EC6A800F12C20 /* Car.swift in Sources */,
 				3D558311242EC6CD00F12C20 /* CarOptions.swift in Sources */,
 				3D5582F8242EB8A200F12C20 /* SceneDelegate.swift in Sources */,
