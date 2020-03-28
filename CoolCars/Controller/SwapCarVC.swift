@@ -10,8 +10,14 @@ import UIKit
 
 class SwapCarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var swapButton: UIButton!
+    @IBOutlet weak var accountButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        swapButton.backgroundColor = .gray
+        swapButton.isEnabled = false
     }
 
 
@@ -30,6 +36,11 @@ class SwapCarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    @IBAction func homeButtonPressed(_ sender: UIButton) {
+        
+    }
+    @IBAction func accountButtonPressed(_ sender: UIButton) {
+    }
     
 }
 

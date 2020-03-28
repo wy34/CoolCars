@@ -9,22 +9,25 @@
 import UIKit
 
 class HomeVC: UIViewController {
-
+    
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var swapButton: UIButton!
+    @IBOutlet weak var accountButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        homeButton.backgroundColor = .gray
+        homeButton.isEnabled = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func homeButtonPressed(_ sender: UIButton) {
     }
-    */
-
+    @IBAction func swapButtonPressed(_ sender: UIButton) {
+    }
+    @IBAction func accountButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func unwindFromSwapCarVC(segue: UIStoryboardSegue) {
+        
+    }
 }
