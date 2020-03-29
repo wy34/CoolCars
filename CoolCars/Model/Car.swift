@@ -13,4 +13,7 @@ struct Car {
     var image: String
     var brand: String
     var model: String
+    var mph: Int
+    var hp: Int
+    var speed: Int
 }

@@ -10,10 +10,23 @@ import UIKit
 
 class MoreInfoVC: UIViewController {
 
+    @IBOutlet weak var carImage: UIImageView!
+    @IBOutlet weak var brandLabel: UILabel!
+    @IBOutlet weak var modelLabel: UILabel!
+    @IBOutlet weak var mphLabel: UILabel!
+    @IBOutlet weak var hpLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    var car: Car!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        carImage.image = UIImage(named: car.image)
+        brandLabel.text = car.brand
+        modelLabel.text = car.model
+        mphLabel.text = String(car.mph)
+        hpLabel.text = String(car.hp)
+        speedLabel.text = String(car.speed)
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -21,5 +34,12 @@ class MoreInfoVC: UIViewController {
     }
     
     @IBAction func swapButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "toHomeVC", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if let homeVC = segue.destination as? HomeVC {
+             homeVC.car = car
+         }
+     }
 }

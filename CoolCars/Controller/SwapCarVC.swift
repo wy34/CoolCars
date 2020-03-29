@@ -14,6 +14,9 @@ class SwapCarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var swapButton: UIButton!
     @IBOutlet weak var accountButton: UIButton!
     
+    var selectedCar: Car!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         swapButton.backgroundColor = .gray
@@ -37,14 +40,14 @@ class SwapCarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toMoreInfoVC", sender: self)
+        selectedCar = cars[indexPath.row]
+        performSegue(withIdentifier: "toMoreDetailVC", sender: self)
     }
     
-    @IBAction func homeButtonPressed(_ sender: UIButton) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let moreInfoVC = segue.destination as? MoreInfoVC {
+            moreInfoVC.car = selectedCar
+        }
     }
-    @IBAction func accountButtonPressed(_ sender: UIButton) {
-    }
-    
 }
 

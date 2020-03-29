@@ -9,7 +9,7 @@
 import Foundation
 
 let cars = [
-    Car(image: "benz", brand: "Mercedes-Benz", model: "I dont know"),
-    Car(image: "tesla", brand: "Tesla", model: "Model S"),
-    Car(image: "lambo", brand: "Lamborghini", model: "No clue")
+    Car(image: "benz", brand: "Mercedes-Benz", model: "S550 4MATIC Coupe", mph: 100, hp: 50, speed: 60),
+    Car(image: "tesla", brand: "Tesla", model: "Model S", mph: 200, hp: 60, speed: 100),
+    Car(image: "lambo", brand: "Lamborghini", model: "Aventador Sv", mph: 150, hp: 70, speed: 150)
 ]

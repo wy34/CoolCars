@@ -10,24 +10,31 @@ import UIKit
 
 class HomeVC: UIViewController {
     
+    @IBOutlet weak var carImage: UIImageView!
+    @IBOutlet weak var brandLabel: UILabel!
+    @IBOutlet weak var modelLabel: UILabel!
+    @IBOutlet weak var mphLabel: UILabel!
+    @IBOutlet weak var hpLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var swapButton: UIButton!
     @IBOutlet weak var accountButton: UIButton!
+    var car: Car!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         homeButton.backgroundColor = .gray
         homeButton.isEnabled = false
-    }
-    
-    @IBAction func homeButtonPressed(_ sender: UIButton) {
-    }
-    @IBAction func swapButtonPressed(_ sender: UIButton) {
-    }
-    @IBAction func accountButtonPressed(_ sender: UIButton) {
+        if let car = car {
+            carImage.image = UIImage(named: car.image)
+            brandLabel.text = car.brand
+            modelLabel.text = car.model
+            mphLabel.text = String(car.mph)
+            hpLabel.text = String(car.hp)
+            speedLabel.text = String(car.speed)
+        }
     }
     
     @IBAction func unwindFromSwapCarVC(segue: UIStoryboardSegue) {
-        
     }
 }
